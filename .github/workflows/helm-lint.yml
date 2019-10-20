@@ -1,0 +1,10 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: alpine/helm
+    steps:
+    - name: lint helm charts
+      run: helm lint nginx nginx
