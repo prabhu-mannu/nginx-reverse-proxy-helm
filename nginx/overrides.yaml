@@ -1,0 +1,10 @@
+ingress:
+  tlsEnabled: true
+  tls: 
+    - secretName: localhost-tls
+      hosts:
+        - "127.0.0.1.nip.io"
+
+upstream:
+  hosts:
+    - httpbin.org

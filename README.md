@@ -1,3 +1,5 @@
+# nginx-helm-reverse-proxy
+
 #### Pre-requisite
 
 - **helm chart default values are filled in to work with k8s on docker for mac**
@@ -47,4 +49,4 @@ helm upgrade --install nginx-demo nginx --set ingress.tlsEnabled=false
 #### To configure upstream servers
 ```bash
 helm upgrade --install nginx-demo nginx --set upstream.hosts={"httpbin:8000"}
-```# nginx-helm-reverse-proxy
+```
