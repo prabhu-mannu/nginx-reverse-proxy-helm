@@ -1,4 +1,4 @@
-name: CI
+name: helm-lint
 
 on: [push]
 
